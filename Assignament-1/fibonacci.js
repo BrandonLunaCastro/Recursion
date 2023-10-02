@@ -1,5 +1,3 @@
- /*  
-// fibonacci whit cycle 
 function fibs(num){
     let series = [0,1]
     for (let n = 2  ; n < num ; n++) {
@@ -23,15 +21,4 @@ function fibs(n){
    return arr; 
 } 
 console.log(fibs(8));
-*/
-//fibonacci recursive
-function fibsRecursive(num){
-    console.log(num)
-    if(num === 1 || num === 0 ){
-        return num;
-    }
-    else{
-        return fibsRecursive(num - 1) + fibsRecursive(num - 2)
-    }
-}
-console.log(fibsRecursive(7));
+

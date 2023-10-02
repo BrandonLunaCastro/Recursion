@@ -1,11 +1,11 @@
-function fibs(num){
+function fibsOne(num){
     let series = [0,1]
     for (let n = 2  ; n < num ; n++) {
        series[n] = series[n-2] + series[n-1] 
     } 
     return (series)
 }
-console.log(fibs(8)); 
+console.log(fibsOne(8)); 
 
 function fibs(n){
     let num = 1;

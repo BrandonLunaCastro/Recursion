@@ -5,7 +5,8 @@ function fibsRecursive(num){
         return num;
     }
     else{
-        return arr.concat(fibsRecursive(num - 1) + fibsRecursive(num - 2))
+       return fibsRecursive(num - 1) + fibsRecursive(num - 2)
+    
     }
 }
 console.log(fibsRecursive(7));

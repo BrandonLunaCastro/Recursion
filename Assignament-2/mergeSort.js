@@ -1,14 +1,14 @@
 const merge = (arrLeft, arrRight,arr) => {
-    let leftSize = Math.round(arr.length / 2)
-    let rightSize = arr.length - leftSize
+    let leftSize = Math.round((arr.length-1) / 2)
+    let rightSize = (arr.length-1) - leftSize
     console.log(leftSize)
     console.log(rightSize)
     let l = 0;
     let r = 0;
     let i = 0;
 
-    while(l < leftSize && r < rightSize){
-        if(arrLeft[l] < arrRight[r]){
+    while(l <= leftSize && r <= rightSize){
+        if(arrLeft[l] <= arrRight[r]){
             arr[i] = arrLeft[l]
             i++
             l++
@@ -45,5 +45,5 @@ function mergeSort(arr){
     } 
 }
 
-console.log(mergeSort([55,2,8,1,98,3,5]));
+console.log(mergeSort([9,3,7,1,56,5,6]));
  
